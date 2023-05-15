@@ -2,6 +2,7 @@
 *
 
 # Don't ignore these files
+!requirements.txt
 !.gitignore
 !README.md
 
