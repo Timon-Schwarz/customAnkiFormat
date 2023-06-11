@@ -6,7 +6,7 @@ import DeckGenerator
 
 
 if __name__ == '__main__':
-    directory = "/home/timon/Documents/notes/networking/new_flashcards"
+    directory = "/home/schwarz/Desktop/01_projects/04_network_engineering_flashcards"
     extension = "xlsx"
     for file in Path(directory).rglob(f'*.{extension}'):
         file_name = file.name
@@ -67,3 +67,4 @@ if __name__ == '__main__':
                                                additional_information=additional_information,
                                                summary_steps=summarized_step_list, steps=step_list)
         genanki.Package(deck).write_to_file(os.path.join(directory, deck_name.replace("::", "-") + '.apkg'))
+
