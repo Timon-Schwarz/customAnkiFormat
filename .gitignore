@@ -12,3 +12,6 @@
 # Don't ignore anything in these folders
 !src/*
 !src/*/**
+
+.idea
+src/__pycache__
